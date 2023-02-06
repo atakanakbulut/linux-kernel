@@ -16,7 +16,7 @@ $ cp /boot/config-$(uname -r) .config
     CONFIG_SYSTEM_REVOCATION_LIST=y
     CONFIG_SYSTEM_REVOCATION_KEYS=""
 
-$ make localmodconfig
+$ make localmodconfig (Create a config based on current config and loaded modules lsmod )
 $ make  deb-pkg 
 $ sudo dpkg -i ../*.deb 
 
